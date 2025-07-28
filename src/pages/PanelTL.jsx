@@ -4,11 +4,11 @@ import { createProject, registerHour } from '../services/api';
 
 
 async function fetchUsers() {
-  const res = await fetch('http://localhost:4000/admin/users');
+  const res = await fetch('https://backchcontroller.onrender.com/admin/users');
   return res.json();
 }
 async function fetchProjects() {
-  const res = await fetch('http://localhost:4000/admin/projects');
+  const res = await fetch('https://backchcontroller.onrender.com/admin/projects');
   return res.json();
 }
 
