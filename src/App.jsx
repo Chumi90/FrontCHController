@@ -9,6 +9,7 @@ import PanelTL from './pages/PanelTL';
 import PanelEmpleado from './pages/PanelEmpleado';
 import PanelHorasMes from './pages/PanelHorasMes';
 
+const API_URL = import.meta.env.VITE_APP_API_URL;
 
 function App() {
   const [role, setRole] = useState(null);

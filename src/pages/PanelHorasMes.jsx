@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react';
 
 async function fetchUsers() {
-  const res = await fetch('https://backchcontroller.onrender.com/admin/users');
+  const res = await fetch(`${import.meta.env.VITE_APP_API_URL}admin/users`);
   return res.json();
 }
 async function fetchHours(userId, month) {
-  const res = await fetch(`https://backchcontroller.onrender.com/admin/hours/${userId}`);
+  const res = await fetch(`${import.meta.env.VITE_APP_API_URL}admin/hours/${userId}`);
   const allHours = await res.json();
   // Filtrar por mes
   return allHours.filter(h => {
