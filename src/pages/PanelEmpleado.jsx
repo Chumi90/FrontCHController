@@ -14,7 +14,7 @@ async function fetchUsers() {
   return res.json();
 }
 async function fetchProjects() {
-  const res = await fetch(`${import.meta.env.VITE_APP_API_URL}/admin/projects`);
+  const res = await fetch(`${import.meta.env.VITE_APP_API_URL}admin/projects`);
   return res.json();
 }
 
