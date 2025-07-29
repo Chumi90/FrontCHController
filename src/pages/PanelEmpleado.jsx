@@ -5,7 +5,7 @@ import { registerHour } from '../services/api';
 
 
 async function fetchHours(userId) {
-  const res = await fetch(`${import.meta.env.VITE_APP_API_URL}+${userId}`);
+  const res = await fetch(`${import.meta.env.VITE_APP_API_URL}${userId}`);
   return res.json();
 }
 
