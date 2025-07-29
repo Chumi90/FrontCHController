@@ -5,16 +5,16 @@ import { registerHour } from '../services/api';
 
 
 async function fetchHours(userId) {
-  const res = await fetch(`${import.meta.env.VITE_APP_API_URL}+${userId}`);
+  const res = await fetch(`${VITE_APP_API_URL}+${userId}`);
   return res.json();
 }
 
 async function fetchUsers() {
-  const res = await fetch(`${import.meta.env.VITE_APP_API_URL}admin/users`);
+  const res = await fetch(`${VITE_APP_API_URL}admin/users`);
   return res.json();
 }
 async function fetchProjects() {
-  const res = await fetch(`${import.meta.env.VITE_APP_API_URL}admin/projects`);
+  const res = await fetch(`${VITE_APP_API_URL}admin/projects`);
   return res.json();
 }
 
