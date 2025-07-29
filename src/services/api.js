@@ -1,4 +1,4 @@
-const API_URL = VITE_API_URL;
+const API_URL = import.meta.env.VITE_APP_API_URL;
 
 export async function createUser(data) {
   const res = await fetch(`${API_URL}/admin/create-user`, {
